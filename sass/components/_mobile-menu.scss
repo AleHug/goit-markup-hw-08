@@ -1,0 +1,18 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-first-color);
+}
+
+.mobile-menu__close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+}

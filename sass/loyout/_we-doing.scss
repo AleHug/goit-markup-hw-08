@@ -1,0 +1,34 @@
+.we-doing-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.we-doing-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.we-doing-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.we-doing-list-overlay {
+  @extend %align;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  font-family: var(--accent-first-font-family);
+   @include font(700, 14px, 16px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-first-color);
+  background: rgba(47, 48, 58, 0.8);
+  overflow: auto;
+}
