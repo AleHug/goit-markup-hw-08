@@ -12,12 +12,22 @@
 }
 
 .mobile-menu__close-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 0;
   border: none;
   background-color: transparent;
   line-height: 0;
 }
 
+.mobil-navi {
+  @include font(500, 43px, 40px);
+  letter-spacing: 0.02em;
+  color: var(--accent-second-color);
+  color: var(--accent-second-color);
+}
+
+.mobil-navi_current {
+  color: var(--accent-second-color);
+}

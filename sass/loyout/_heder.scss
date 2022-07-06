@@ -28,6 +28,10 @@ justify-content: space-between;
   fill: var(--accent-fouhrt-color);
 }
 
+.mobil-navi__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 // .page-header {
 //   padding-top: 24px;
 //   padding-bottom: 25px;

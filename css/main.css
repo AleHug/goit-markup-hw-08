@@ -357,6 +357,10 @@ body {
   color: var(--accent-first-color);
 }
 
+.mobile-menu__container {
+  padding: 48px 40px;
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -374,6 +378,19 @@ body {
   border: none;
   background-color: transparent;
   line-height: 0;
+}
+
+.mobil-navi {
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 0.9302325581;
+  letter-spacing: 0.02em;
+  color: var(--accent-second-color);
+  color: var(--accent-second-color);
+}
+
+.mobil-navi_current {
+  color: var(--accent-second-color);
 }
 
 .navi {
@@ -404,6 +421,10 @@ body {
 
 .mobile-menu-open-btn {
   fill: var(--accent-fouhrt-color);
+}
+
+.mobil-navi__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .hero {
