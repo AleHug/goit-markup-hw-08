@@ -1,3 +1,4 @@
+// смотри в низу описание по скрытию окна!
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -5,35 +6,48 @@
   width: 100%;
   height: 100%;
   background-color: var(--accent-first-color);
+  overflow-y: scroll;
+
+  // прячем окно "mobile-menu"
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+// включаем окно "mobile-menu"
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .mobile-menu__container {
-  padding: 48px  40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
 }
 
 .mobile-menu__close-btn {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0;
+  @extend %align;
+  top: 10px;
+  right: 15px;
+  padding: 0px;
   border: none;
   background-color: transparent;
   line-height: 0;
+  cursor: pointer;
 }
 
-.mobile-menu-open-btn {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  line-height: 0;
-}
-
-.mobile-menu-open-btn {
-  fill: var(--accent-fouhrt-color);
-}
-
-.mobil-navi {
-  margin-bottom: 302px;
+.mobile-menu__close-btn:hover .mobile-menu__close-icon,
+.mobile-menu__close-btn:focus .mobile-menu__close-icon {
+  fill: var(--accent-second-color);
 }
 
 .mobil-navi__item:not(:last-child) {
@@ -46,7 +60,7 @@
   color: var(--accent-fouhrt-color);
 }
 
-.mobil-navi_current {
+.mobil-navi__current {
   color: var(--accent-second-color);
 }
 
@@ -72,7 +86,6 @@
 
 .mobil-social__list {
   display: flex;
-  
 }
 
 .mobil-social__link {
@@ -90,12 +103,52 @@
 }
 
 .mobil-social__link::before {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   top: 0px;
   left: -10px;
   height: 100%;
   width: 1px;
-  background-color: rgba(33, 33, 33, 0.2);;
+  background-color: rgba(33, 33, 33, 0.2);
 }
+
+// Мобильное меню открывается по клику на кнопку "бургера". Для того чтобы скрипт сработал необходимо добавить в разметку специальные атрибуты, по которым скрипт ищет элементы:
+
+// data-menu-open - на кнопку открытия мобильного меню(бургер)
+// data-menu-close - на кнопку закрытия мобильного меню(крестик)
+// data-menu - на мобильное меню
+// После чего, перед закрывающим тегом body добавить тег script со ссылкой на файл скрипта для мобильного меню.
+
+// <body>
+//   <!-- Ставим перед закрывающим тегом body -->
+//   <script src="./js/menu.js"></script>
+// </body>
+// Вот скрипт который необходимо скопировать и вставить в файл скрипта menu.js.
+
+// (() => {
+//   const refs = {
+//     openMenuBtn: document.querySelector('[data-menu-open]'),
+//     closeMenuBtn: document.querySelector('[data-menu-close]'),
+//     menu: document.querySelector('[data-menu]'),
+//   };
+//   refs.openMenuBtn.addEventListener('click', toggleModal);
+//   refs.closeMenuBtn.addEventListener('click', toggleModal);
+//   function toggleModal() {
+//     refs.menu.classList.toggle('is-open');
+//   }
+// })();
+// Изначально мобильное меню должно быть скрыто, например с помощью:
+
+// .mobile-menu {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
+// Мобильное меню открывается когда на него вешается клас is-open. Нужно описать еще этот клас, например:
+
+// .mobile-menu.is-open {
+//   opacity: 1;
+//   visibility: visible;
+//   pointer-events: auto;
+// }

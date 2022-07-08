@@ -6,6 +6,13 @@
   display: none;
 }
 
+.mobile-menu-open-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+}
+
 .page-header__container {
 display: flex;
 align-items: center;
@@ -81,7 +88,7 @@ justify-content: space-between;
 // }
 
 // .contact__mail,
-// .heder-tel {
+// .header-tel {
 //   display: flex;
 //   align-items: center;
 //    @include font(500, 14px, 16px);
@@ -120,8 +127,8 @@ justify-content: space-between;
 //   fill: var(--accent-third-color);
 //   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
-// .heder-tel:hover &,
-// .heder-tel:focus & {
+// .header-tel:hover &,
+// .header-tel:focus & {
 //   color: var(--accent-second-color);
 //   fill: var(--accent-second-color);
 // }
