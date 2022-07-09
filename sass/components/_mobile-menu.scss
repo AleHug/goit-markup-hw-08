@@ -1,121 +1,121 @@
 @media screen and (max-width: 767px) {
-// смотри в низу описание по скрытию окна!
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--accent-first-color);
-  overflow-y: scroll;
+  // смотри в низу описание по скрытию окна!
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-first-color);
+    overflow-y: scroll;
 
-  // прячем окно "mobile-menu"
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 500ms linear, visibility 500ms linear;
-}
+    // прячем окно "mobile-menu"
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 500ms linear, visibility 500ms linear;
+  }
 
-// включаем окно "mobile-menu"
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
+  // включаем окно "mobile-menu"
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 
-.mobile-menu__container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
-}
+  .mobile-menu__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+  }
 
-.mobile-menu__close-btn {
-  position: absolute;
-  //@extend %align;
-   display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 10px;
-  right: 15px;
-  padding: 0px;
-  border: none;
-  background-color: transparent;
-  line-height: 0;
-  cursor: pointer;
-}
+  .mobile-menu__close-btn {
+    position: absolute;
+    //@extend %align;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 15px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+    cursor: pointer;
 
-.mobile-menu__close-btn:hover .mobile-menu__close-icon,
-.mobile-menu__close-btn:focus .mobile-menu__close-icon {
-  fill: var(--accent-second-color);
-}
+    &:hover .mobile-menu__close-icon,
+    &:focus .mobile-menu__close-icon {
+      fill: var(--accent-second-color);
+    }
+  }
 
-.mobil-navi__item:not(:last-child) {
-  margin-bottom: 32px;
-}
+  .mobil-navi__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 
-.mobil-navi__link {
-  @include font(500, 43px, 40px);
-  letter-spacing: 0.02em;
-  color: var(--accent-fouhrt-color);
-}
+  .mobil-navi__link {
+    @include font(500, 43px, 40px);
+    letter-spacing: 0.02em;
+    color: var(--accent-fouhrt-color);
+  }
 
-.mobil-navi__current {
-  color: var(--accent-second-color);
-}
+  .mobil-navi__current {
+    color: var(--accent-second-color);
+  }
 
-.mobil-contact__tel {
-  @include font(500, 34px, 40px);
-  letter-spacing: 0.02em;
-  color: var(--accent-second-color);
-}
+  .mobil-contact__tel {
+    @include font(500, 34px, 40px);
+    letter-spacing: 0.02em;
+    color: var(--accent-second-color);
+  }
 
-.mobil-contact {
-  margin-bottom: 64px;
-}
+  .mobil-contact {
+    margin-bottom: 64px;
+  }
 
-.mobil-contact__item:not(:last-child) {
-  margin-bottom: 32px;
-}
+  .mobil-contact__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 
-.mobil-contact__mail {
-  @include font(500, 24px, 28px);
-  letter-spacing: 0.02em;
-  color: var(--accent-third-color);
-}
+  .mobil-contact__mail {
+    @include font(500, 24px, 28px);
+    letter-spacing: 0.02em;
+    color: var(--accent-third-color);
+  }
 
-.mobil-social__list {
-  display: flex;
-}
+  .mobil-social__list {
+    display: flex;
+  }
 
-.mobil-social__link {
-  @include font(500, 18px, 22px);
-  letter-spacing: 0.02em;
-  color: var(--accent-second-color);
-}
+  .mobil-social__link {
+    @include font(500, 18px, 22px);
+    letter-spacing: 0.02em;
+    color: var(--accent-second-color);
+  }
 
-.mobil-social__item {
-  margin-right: 20px;
-}
+  .mobil-social__item {
+    margin-right: 20px;
+  }
 
-.mobil-social__item:not(:first-child) {
-  position: relative;
-}
+  .mobil-social__item:not(:first-child) {
+    position: relative;
+  }
 
-.mobil-social__link::before {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 0px;
-  left: -10px;
-  height: 100%;
-  width: 1px;
-  background-color: rgba(33, 33, 33, 0.2);
-}
+  .mobil-social__link::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: -10px;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
 }
 
 @media screen and (min-width: 768px) {

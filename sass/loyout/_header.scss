@@ -1,3 +1,8 @@
+  
+
+//************* Mobil -> 767px ****************
+
+@media screen and (max-width: 767px) {
   .page-header {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -9,21 +14,29 @@
     justify-content: space-between;
   }
 
-@media screen and (max-width: 767px) {
   .navi {
     display: none;
   }
+
   .contact {
     display: none;
   }
+
   .mobile-menu-open-btn {
     padding: 0;
     border: none;
     background-color: transparent;
     line-height: 0;
+
+     &:hover .mobile-menu-open-btn__icon,
+    &:focus .mobile-menu-open-btn__icon {
+      fill: var(--accent-second-color);
+    }
   }
 }
 
+
+//************* Tablet 768px -> ****************
 
 @media screen and (min-width: 768px) {
   .mobile-menu-open-btn {
@@ -143,11 +156,12 @@
 }
 
 
+//************* Desctop -> 1200px ****************
+
 @media screen and (min-width: 1200px) {
   .page-header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
 }
 
 .logo__header {
