@@ -1,4 +1,44 @@
-.modal {
+//************* Mobil -> 1199px ****************
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+
+    &:hover .modal-close-btn-icon,
+    &:focus .modal-close-btn-icon {
+      fill: var(--accent-second-color);
+    }
+  }
+}
+
+
+//************* Desctop 1200px -> ****************
+
+@media screen and (min-width: 1200px) {
+  .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -13,7 +53,9 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  @extend %align;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -21,9 +63,40 @@
   border-radius: 50%;
   background: transparent;
   cursor: pointer;
-  
+
     &:hover .modal-close-btn-icon,
     &:focus .modal-close-btn-icon {
          fill: var(--accent-second-color);
 }
 }
+
+}
+// .modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 528px;
+//   height: 580px;
+//   padding: 40px;
+//   background-color: rgb(255, 255, 255);
+// }
+
+// .modal-close-btn {
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
+//   @extend %align;
+//   width: 30px;
+//   height: 30px;
+//   padding: 0;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 50%;
+//   background: transparent;
+//   cursor: pointer;
+
+//     &:hover .modal-close-btn-icon,
+//     &:focus .modal-close-btn-icon {
+//          fill: var(--accent-second-color);
+// }
+// }
