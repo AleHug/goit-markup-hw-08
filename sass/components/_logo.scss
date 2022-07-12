@@ -1,11 +1,3 @@
-.logo {
-  font-family: var(--accent-second-font-family);
-  @include font(700, 24px, 28px);
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--accent-second-color);
-}
-
 .logo__black {
   color: #000000;
 }
@@ -14,6 +6,41 @@
  color: var(--accent-first-color);
 }
 
+//************* Mobil -> 767px ****************
+
+@media screen and (max-width: 767px) {
+  .logo {
+  font-family: var(--accent-second-font-family);
+  @include font(700, 24px, 28px);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--accent-second-color);
+}
+}
+
+//************* Tablet 768px -> ****************
+
+@media screen and (min-width: 768px) {
+  .logo {
+  font-family: var(--accent-second-font-family);
+  @include font(700, 24px, 28px);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--accent-second-color);
+}
+}
+
+//************* Desctop 1200px -> ****************
+
+@media screen and (min-width: 1200px) {
+  .logo {
+  font-family: var(--accent-second-font-family);
+  @include font(700, 26px, 31px);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--accent-second-color);
+}
+}
 // .logo {
 //    font-family: var(--accent-second-font-family);
 //    @include font(700, 26px, 31px);

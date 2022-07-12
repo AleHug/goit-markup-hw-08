@@ -4,6 +4,7 @@
   .page-header {
     padding-top: 10px;
     padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
   }
 
   .page-header__container {
@@ -41,8 +42,8 @@
     display: none;
   }
   .page-header {
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -123,9 +124,9 @@
 
 .contact__envelope-icon {
   padding: 0;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
   fill: var(--accent-third-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -140,8 +141,8 @@
 .contact__tel-icon {
   padding: 0;
   width: 10px;
-  height: 16px;
-  margin-right: 10px;
+  height: 14px;
+  margin-right: 8px;
   fill: var(--accent-third-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -163,6 +164,10 @@
 
 .logo__header {
   margin-right: 93px;
+}
+
+.navi__link {
+  padding: 33px 0;
 }
 
 .contact {
