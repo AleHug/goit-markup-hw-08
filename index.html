@@ -71,64 +71,64 @@
       </div>
     </header>
 
-      <!-- Mobile menu -->
-      <div class="mobile-menu" data-menu>
-        <div class="container mobile-menu__container">
-          <div class="mobil-navi-top">
-            <button type="button" class="mobile-menu__close-btn" data-menu-close>
-              <svg class="mobile-menu__close-icon" width="40" height="40">
-                <use href="./images/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu__container">
+        <div class="mobil-navi-top">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
 
-            <ul class="mobil-navi list">
-              <li class="mobil-navi__item">
-                <a class="mobil-navi__link mobil-navi__current link" href="./index.html">Студия</a>
+          <ul class="mobil-navi list">
+            <li class="mobil-navi__item">
+              <a class="mobil-navi__link mobil-navi__current link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobil-navi__item">
+              <a class="mobil-navi__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobil-navi__item">
+              <a class="mobil-navi__link link" href="#contact">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobil-navi-bottom">
+          <ul class="mobil-contact list">
+            <li class="mobil-contact__item">
+              <a class="mobil-contact__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobil-contact__item">
+              <a class="mobil-contact__mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <div class="mobil-social">
+            <ul class="mobil-social__list list">
+              <li class="mobil-social__item">
+                <a class="mobil-social__link link" href="">Instagram</a>
               </li>
-              <li class="mobil-navi__item">
-                <a class="mobil-navi__link link" href="./portfolio.html">Портфолио</a>
+              <li class="mobil-social__item">
+                <a class="mobil-social__link link" href="">Twitter</a>
               </li>
-              <li class="mobil-navi__item">
-                <a class="mobil-navi__link link" href="#contact">Контакты</a>
+              <li class="mobil-social__item">
+                <a class="mobil-social__link link" href="">Facebook</a>
+              </li>
+              <li class="mobil-social__item">
+                <a class="mobil-social__link link" href="">LinkedIn</a>
               </li>
             </ul>
-          </div>
-
-          <div class="mobil-navi-bottom">
-            <ul class="mobil-contact list">
-              <li class="mobil-contact__item">
-                <a class="mobil-contact__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-              <li class="mobil-contact__item">
-                <a class="mobil-contact__mail link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-
-            <div class="mobil-social">
-              <ul class="mobil-social__list list">
-                <li class="mobil-social__item">
-                  <a class="mobil-social__link link" href="">Instagram</a>
-                </li>
-                <li class="mobil-social__item">
-                  <a class="mobil-social__link link" href="">Twitter</a>
-                </li>
-                <li class="mobil-social__item">
-                  <a class="mobil-social__link link" href="">Facebook</a>
-                </li>
-                <li class="mobil-social__item">
-                  <a class="mobil-social__link link" href="">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
+    </div>
 
     <!-- Main -->
-    <main class="main-page"> 
-    <!-- Hero -->
+    <main class="main-page">
+      <!-- Hero -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">
@@ -137,9 +137,9 @@
           </h1>
           <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section> 
+      </section>
 
-    <!-- Advantages -->
+      <!-- Advantages -->
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
@@ -190,36 +190,44 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
-    <!-- What are we doing -->
+      <!-- What are we doing -->
       <section class="section-doing section">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="we-doing-list list">
             <li class="we-doing-item">
               <div class="we-doing-img-wrapper">
-                <img srcset="./images/doing/desktop_app.jpg 1x, ./images/doing/desktop_app@2x.jpg 2x"
+                <img
+                  srcset="./images/doing/desktop_app.jpg 1x, ./images/doing/desktop_app@2x.jpg 2x"
                   class="we-doing-img"
-                  src="./images/doing/desktop_app.jpg"/>
+                  src="./images/doing/desktop_app.jpg"
+                  alt="desktop development picture"
+                />/>
+
                 <p class="we-doing-list-overlay">Десктопные приложения</p>
               </div>
             </li>
             <li class="we-doing-item">
               <div class="we-doing-img-wrapper">
-                <img srcset="./images/doing/mobile_app.jpg 1x, ./images/doing/mobile_app@2x.jpg 2x"
+                <img
+                  srcset="./images/doing/mobile_app.jpg 1x, ./images/doing/mobile_app@2x.jpg 2x"
                   class="we-doing-img"
                   src="./images/doing/mobile_app.jpg"
-                  alt="development picture"/>
+                  alt="mobile development picture"
+                />
                 <p class="we-doing-list-overlay">Мобильные приложения</p>
               </div>
             </li>
             <li class="we-doing-item">
               <div class="we-doing-img-wrapper">
-                <img srcset="./images/doing/design.jpg 1x, ./images/doing/design@2x.jpg 2x" 
+                <img
+                  srcset="./images/doing/design.jpg 1x, ./images/doing/design@2x.jpg 2x"
                   class="we-doing-img"
                   src="./images/doing/design.jpg"
-                  alt="design picture"/>
+                  alt="design development picture"
+                />
                 <p class="we-doing-list-overlay">Дизайнерские решения</p>
               </div>
             </li>
@@ -227,24 +235,46 @@
         </div>
       </section>
 
-    <!-- Our team -->
+      <!-- Our team -->
       <section class="section team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list-item">
-
               <picture>
                 <source
-                srcset="./images/team/igor_demyaninko_desk.jpg 1x, ./images/team/igor_demyaninko_desk@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  srcset="
+                    ./images/team/igor_demyaninko_desk.jpg    1x,
+                    ./images/team/igor_demyaninko_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
                 <source
-                srcset="./images/team/igor_demyaninko_tab.jpg 1x, ./images/team/igor_demyaninko_tab@2x.jpg 2x" media="(min-width: 768px)"/>
+                  srcset="
+                    ./images/team/igor_demyaninko_tab.jpg    1x,
+                    ./images/team/igor_demyaninko_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
                 <source
-                srcset="./images/team/igor_demyaninko_tab.jpg 1x, ./images/team/igor_demyaninko_tab@2x.jpg 2x" media="(mix-width: 767px)"/>
-                
-                <img srcset="./images/team/igor_demyaninko_mob.jpg 1x, ./images/team/igor_demyaninko_mob@2x.jpg 2x" class="team-img" src="./images/team/igor_demyaninko_mob.jpg" alt="Игорь Демьяненко picture"/>
+                  srcset="
+                    ./images/team/igor_demyaninko_tab.jpg    1x,
+                    ./images/team/igor_demyaninko_tab@2x.jpg 2x
+                  "
+                  media="(mix-width: 767px)"
+                />
+
+                <img
+                  srcset="
+                    ./images/team/igor_demyaninko_mob.jpg    1x,
+                    ./images/team/igor_demyaninko_mob@2x.jpg 2x
+                  "
+                  class="team-img"
+                  src="./images/team/igor_demyaninko_mob.jpg"
+                  alt="Игорь Демьяненко picture"
+                />
               </picture>
 
               <div class="team-description">
@@ -283,18 +313,40 @@
               </div>
             </li>
             <li class="team-list-item">
-
               <picture>
                 <source
-                srcset="./images/team/olga_repina_desk.jpg 1x, ./images/team/olga_repina_desk@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  srcset="
+                    ./images/team/olga_repina_desk.jpg    1x,
+                    ./images/team/olga_repina_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
                 <source
-                srcset="./images/team/olga_repina_tab.jpg 1x, ./images/team/olga_repina_tab@2x.jpg 2x" media="(min-width: 768px)"/>
+                  srcset="
+                    ./images/team/olga_repina_tab.jpg    1x,
+                    ./images/team/olga_repina_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
                 <source
-                srcset="./images/team/olga_repina_mob.jpg 1x, ./images/team/olga_repina_mob@2x.jpg 2x" media="(max-width: 767px)"/>
-                
-                <img srcset="./images/team/olga_repina_mob.jpg 1x, ./images/team/olga_repina_mob@2x.jpg 2x" class="team-img" src="./images/team/olga_repina_mob.jpg" alt="Ольга Репина picture"/>
+                  srcset="
+                    ./images/team/olga_repina_mob.jpg    1x,
+                    ./images/team/olga_repina_mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  srcset="
+                    ./images/team/olga_repina_mob.jpg    1x,
+                    ./images/team/olga_repina_mob@2x.jpg 2x
+                  "
+                  class="team-img"
+                  src="./images/team/olga_repina_mob.jpg"
+                  alt="Ольга Репина picture"
+                />
               </picture>
 
               <div class="team-description">
@@ -333,20 +385,42 @@
               </div>
             </li>
             <li class="team-list-item">
-
               <picture>
                 <source
-                srcset="./images/team/nikolay_tarasov_desk.jpg 1x, ./images/team/nikolay_tarasov_desk@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  srcset="
+                    ./images/team/nikolay_tarasov_desk.jpg    1x,
+                    ./images/team/nikolay_tarasov_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
                 <source
-                srcset="./images/team/nikolay_tarasov_tab.jpg 1x, ./images/team/nikolay_tarasov_tab@2x.jpg 2x" media="(min-width: 768px)"/>
+                  srcset="
+                    ./images/team/nikolay_tarasov_tab.jpg    1x,
+                    ./images/team/nikolay_tarasov_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
                 <source
-                srcset="./images/team/nikolay_tarasov_mob.jpg 1x, ./images/team/nikolay_tarasov_mob@2x.jpg 2x" media="(max-width: 767px)"/>
-                
-                <img srcset="./images/team/nikolay_tarasov_mob.jpg 1x, ./images/team/nikolay_tarasov_mob@2x.jpg 2x" class="team-img" src="./images/team/nikolay_tarasov_mob.jpg" alt="Николай Тарасов picture"/>
+                  srcset="
+                    ./images/team/nikolay_tarasov_mob.jpg    1x,
+                    ./images/team/nikolay_tarasov_mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  srcset="
+                    ./images/team/nikolay_tarasov_mob.jpg    1x,
+                    ./images/team/nikolay_tarasov_mob@2x.jpg 2x
+                  "
+                  class="team-img"
+                  src="./images/team/nikolay_tarasov_mob.jpg"
+                  alt="Николай Тарасов picture"
+                />
               </picture>
-              
+
               <div class="team-description">
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p class="team-position">Marketing</p>
@@ -383,18 +457,40 @@
               </div>
             </li>
             <li class="team-list-item">
-
-               <picture>
+              <picture>
                 <source
-                srcset="./images/team/michail_ermakov_desk.jpg 1x, ./images/team/michail_ermakov_desk@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  srcset="
+                    ./images/team/michail_ermakov_desk.jpg    1x,
+                    ./images/team/michail_ermakov_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
                 <source
-                srcset="./images/team/michail_ermakov_tab.jpg 1x, ./images/team/michail_ermakov_tab@2x.jpg 2x" media="(min-width: 768px)"/>
+                  srcset="
+                    ./images/team/michail_ermakov_tab.jpg    1x,
+                    ./images/team/michail_ermakov_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
                 <source
-                srcset="./images/team/michail_ermakov_mob.jpg 1x, ./images/team/michail_ermakov_mob@2x.jpg 2x" media="(max-width: 767px)"/>
-                
-                <img srcset="./images/team/michail_ermakov_mob.jpg 1x, ./images/team/michail_ermakov_mob@2x.jpg 2x" class="team-img" src="./images/team/michail_ermakov_mob.jpg" alt="Михаил Ермаков picture"/>
+                  srcset="
+                    ./images/team/michail_ermakov_mob.jpg    1x,
+                    ./images/team/michail_ermakov_mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  srcset="
+                    ./images/team/michail_ermakov_mob.jpg    1x,
+                    ./images/team/michail_ermakov_mob@2x.jpg 2x
+                  "
+                  class="team-img"
+                  src="./images/team/michail_ermakov_mob.jpg"
+                  alt="Михаил Ермаков picture"
+                />
               </picture>
 
               <div class="team-description">
@@ -531,13 +627,13 @@
                 </svg>
               </a>
             </li>
-             <li class="social-list__item">
-                    <a href="" class="social-list__link dark">
-                      <svg class="social-list__icon accent-first-color">
-                        <use href="./images/sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link dark">
+                <svg class="social-list__icon accent-first-color">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
             <li class="social-list__item">
               <a href="" class="social-list__link dark">
                 <svg class="social-list__icon accent-first-color">
@@ -550,103 +646,110 @@
 
         <div class="subscription-block">
           <h2 class="footer-title">Подпишитесь на рассылку</h2>
-        <form class="newsletter-form">
+          <form class="newsletter-form">
+            <input
+              class="newsletter-form__input"
+              placeholder="E-mail"
+              type="email"
+              required
+              name="user_email"
+              pattern="+@"
+              title=""
+            />
+            <button type="submit" class="modal-btn newsletter-form__btn">
+              Подписаться
+              <svg class="newsletter-form__icon">
+                <use href="./images/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Backdrop -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="11" height="11">
+            <use href="./images/sprite.svg#close-icon"></use>
+          </svg>
+        </button>
+        <form class="contact-form">
+          <b class="contact-form-header">Оставьте свои данные, мы вам перезвоним</b>
+          <label class="contact-form-field">
+            <span class="contact-form-field-key">Имя</span>
+            <span class="contact-form-input-wrapper">
               <input
-                class="newsletter-form__input"
-                placeholder="E-mail"
+                class="contact-form-input"
+                type="text"
+                required
+                name="user_name"
+                pattern="[a-zA-Z]*"
+                title="Name"
+              />
+              <svg class="contact-form-icon" width="12px" height="12px">
+                <use href="./images/sprite.svg#icon-person-form"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="contact-form-field">
+            <span class="contact-form-field-key">Телефон</span>
+            <span class="contact-form-input-wrapper">
+              <input
+                class="contact-form-input"
+                type="tel"
+                required
+                name="user_tel_number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <svg class="contact-form-icon" width="13px" height="13px">
+                <use href="./images/sprite.svg#icon-phone-form"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="contact-form-field">
+            <span class="contact-form-field-key">Почта</span>
+            <span class="contact-form-input-wrapper">
+              <input
+                class="contact-form-input"
                 type="email"
                 required
                 name="user_email"
                 pattern="+@"
                 title=""
               />
-              <button type="submit" class="modal-btn newsletter-form__btn">Подписаться
-                <svg class="newsletter-form__icon">
-                <use href="./images/sprite.svg#icon-icon-send"></use>
+              <svg class="contact-form-icon" width="15px" height="12px">
+                <use href="./images/sprite.svg#icon-envelope-form"></use>
               </svg>
-              </button>
-        </div>
+            </span>
+          </label>
+          <label class="contact-form-field-textarea">
+            <span class="contact-form-field-key">Комментарий</span>
+            <textarea
+              class="contact-form-messege"
+              placeholder="Введите текст"
+              name="user_message"
+            ></textarea>
+          </label>
+          <input
+            type="checkbox"
+            class="contact-form-checkbox visually-hidden"
+            id="checkbox-policy"
+          />
+          <label for="checkbox-policy" class="contackt-form-checkbox-label"
+            >Соглашаюсь с рассылкой и принимаю&nbsp;<a class="contackt-form-link" href=""
+              >Условия договора</a
+            ></label
+          >
+          <button type="submit" class="modal-btn">Отправить</button>
         </form>
       </div>
-    </footer>
+    </div>
 
-    <!-- Backdrop -->
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button type="button" class="modal-close-btn" data-modal-close>
-            <svg class="modal-close-btn-icon" width="11" height="11">
-              <use href="./images/sprite.svg#close-icon"></use>
-            </svg>
-          </button>
-          <form class="contact-form">
-            <b class="contact-form-header">Оставьте свои данные, мы вам перезвоним</b>
-            <label class="contact-form-field">
-              <span class="contact-form-field-key">Имя</span>
-              <span class="contact-form-input-wrapper">
-                <input
-                  class="contact-form-input"
-                  type="text"
-                  required
-                  name="user_name"
-                  pattern="[a-zA-Z]*"
-                  title="Name"
-                />
-                <svg class="contact-form-icon" width="12px" height="12px">
-                  <use href="./images/sprite.svg#icon-person-form"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="contact-form-field">
-              <span class="contact-form-field-key">Телефон</span>
-              <span class="contact-form-input-wrapper">
-                <input
-                  class="contact-form-input"
-                  type="tel"
-                  required
-                  name="user_tel_number"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                  title="xxx-xxx-xx-xx"
-                />
-                <svg class="contact-form-icon" width="13px" height="13px">
-                  <use href="./images/sprite.svg#icon-phone-form"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="contact-form-field">
-              <span class="contact-form-field-key">Почта</span>
-              <span class="contact-form-input-wrapper">
-                <input
-                  class="contact-form-input"
-                  type="email"
-                  required
-                  name="user_email"
-                  pattern="+@"
-                  title=""
-                />
-                <svg class="contact-form-icon" width="15px" height="12px">
-                  <use href="./images/sprite.svg#icon-envelope-form"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="contact-form-field-textarea">
-              <span class="contact-form-field-key">Комментарий</span>
-              <textarea
-                class="contact-form-messege"
-                placeholder="Введите текст"
-                name="user_message"
-              ></textarea>
-            </label>
-            <input type="checkbox" class="contact-form-checkbox visually-hidden" id="checkbox-policy"/>
-            <label for="checkbox-policy" class="contackt-form-checkbox-label"
-              >Соглашаюсь с рассылкой и принимаю&nbsp;<a class="contackt-form-link" href="">Условия договора</a></label
-            >
-            <button type="submit" class="modal-btn">Отправить</button>
-          </form>
-        </div>
-      </div>
-    
-    <!--js script-->  
-    <script src="./js/modal.js"></script> 
+    <!--js script-->
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
 </html>
