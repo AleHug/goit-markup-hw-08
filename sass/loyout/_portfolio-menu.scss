@@ -37,15 +37,12 @@
 
 @media screen and (min-width: 768px) {
   .menu-list {
+    gap: 8px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 30px;
-  }
-
-  .menu-item:not(:last-child) {
-    margin-right: 8px;
   }
 
   .menu-btn {
@@ -76,10 +73,6 @@
 
 @media screen and (min-width: 1200px) {
   .menu-list {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 50px;
 }
 

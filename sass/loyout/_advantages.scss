@@ -1,6 +1,10 @@
 //************* Mobil -> 767px ****************
 
 @media screen and (max-width: 767px) {
+.advantages-item {
+    margin-bottom: 30px;
+  }
+
   .advanatages-icone-background {
     display: flex;
     justify-content: center;

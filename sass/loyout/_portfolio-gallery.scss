@@ -1,34 +1,10 @@
 //************* Mobil -> 767px ****************
 
 @media screen and (max-width: 767px) {
-  .gallery-title {
-    @include font(700, 18px, 36px);
-    letter-spacing: 0.06em;
-    color: var(--accent-fouhrt-color);
-    margin-bottom: 4px;
-  }
-
-  .gallery-description {
-    @include font(400, 16px, 30px);
-    letter-spacing: 0.03em;
-    color: var(--accent-third-color);
-  }
-
-  .gallery-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-  }
-
-  .gallery-item {
-    margin-top: 30px;
-    margin-left: 30px;
-    flex-basis: calc((100% - 90px) / 3);
-  }
-
   .gallery-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -46,13 +22,6 @@
 
   .gallery-img {
     width: 450px;
-  }
-
-  .gallery-subitem {
-    padding: 20px 24px;
-    border-left: 1px solid rgba(238, 238, 238, 1);
-    border-bottom: 1px solid rgba(238, 238, 238, 1);
-    border-right: 1px solid rgba(238, 238, 238, 1);
   }
 
   .gallery-list-overlay {
@@ -77,6 +46,28 @@
       transform: translateY(0%);
     }
   }
+
+  .gallery-subitem {
+    flex-grow: 1;
+    padding: 20px 24px;
+    border-left: 1px solid rgba(238, 238, 238, 1);
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    border-right: 1px solid rgba(238, 238, 238, 1);
+  }
+
+
+  .gallery-title {
+    @include font(700, 18px, 36px);
+    letter-spacing: 0.06em;
+    color: var(--accent-fouhrt-color);
+    margin-bottom: 4px;
+  }
+
+  .gallery-description {
+    @include font(400, 16px, 30px);
+    letter-spacing: 0.03em;
+    color: var(--accent-third-color);
+  }
 }
 
 //************* Tablet 768px -> ****************
@@ -91,11 +82,13 @@
   .gallery-item {
     margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 2);
   }
 
   .gallery-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -139,6 +132,7 @@
   }
 
   .gallery-subitem {
+    flex-grow: 1;
     padding: 20px 24px;
     border-left: 1px solid rgba(238, 238, 238, 1);
     border-bottom: 1px solid rgba(238, 238, 238, 1);
@@ -162,10 +156,12 @@
 //************* Desctop 1200px -> ****************
 
 @media screen and (min-width: 1200px) {
-  .gallery-img {
-    width: 370px;
+  .gallery-item {
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
+
+
 
 
 
